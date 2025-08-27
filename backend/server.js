@@ -5,16 +5,18 @@ const { Client } = require("pg");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
+require("dotenv").config();
 
 const app = express();
 const port = 5001;
 
 const client = new Client({
-  host: "localhost",
-  user: "postgres",
-  password: "@Admin1234",
-  port: 5432,
-  database: "todo",
+  host: process.env.POSTGRES_HOST,
+  user: process.env.POSTGRES_USER,
+  password: process.env.POSTGRES_PASSWORD,
+  port: process.env.POSTGRES_PORT,
+  database: process.env.POSTGRES_DATABASE,
+  ssl: { rejectUnauthorized: false },
 });
 
 app.use(
