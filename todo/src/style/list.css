@@ -1,0 +1,24 @@
+.list-btn{
+    padding: 10px 20px;
+    background-color:#161a2b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-right: 60px;
+    font-size: medium;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+h1 {
+  margin: 32px 38%;
+  color: #fff;
+  font-size: 24px;
+}
+
+
+.list-btn:hover{
+    background-color: #2b3868;
+    transition:ease 0.2s;
+}

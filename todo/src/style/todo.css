@@ -1,0 +1,43 @@
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+  }
+  
+  .todo-row.complete .todo-text {
+    text-decoration: line-through;
+    color: rgb(212, 13, 13);
+  }
+  
+
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .edit-icon {
+    color: #fff;
+  }
+  
